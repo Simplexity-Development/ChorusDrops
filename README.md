@@ -2,9 +2,13 @@
 Chorus Flowers Always Drop
 
 This plugin fixes an issue I've always had with how chorus works. 
-When breaking the base, in vanilla, it will not break the flowers. 
-Now they will.
+
+When breaking the stem, causing the entire tree to collapse, it will not drop the flowers. 
+
+Now it will.
+
 Now you can have chorus farms without 10,000 signs explaining how it works
+
 yay
 
 
