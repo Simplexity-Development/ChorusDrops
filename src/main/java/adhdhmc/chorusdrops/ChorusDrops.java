@@ -16,7 +16,7 @@ public final class ChorusDrops extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(ChorusDrops.plugin);
             return;
         }
-        getServer().getPluginManager().registerEvents(new DropEvent(), this);
-        getServer().getPluginManager().registerEvents(new ProjectileDropEvent(), this);
+        getServer().getPluginManager().registerEvents(new ChorusFlowerDestructionListener(), this);
+        getServer().getPluginManager().registerEvents(new ProjectileHitChorusFlowerListener(), this);
     }
 }

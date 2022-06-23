@@ -8,7 +8,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 
-public class DropEvent implements Listener {
+public class ChorusFlowerDestructionListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void flowersBreak(BlockDestroyEvent event){
         if(event.getBlock().getType() != Material.CHORUS_FLOWER){
