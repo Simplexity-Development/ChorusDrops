@@ -11,6 +11,4 @@ Now you can have chorus farms without 10,000 signs explaining how it works
 
 yay
 
-
-https://user-images.githubusercontent.com/45906780/175376775-7a0e2984-1df4-4fcc-82a5-b02ba9f930b7.mp4
-
+![ChorusDropsGif](https://user-images.githubusercontent.com/45906780/175381502-80e204b1-7d36-407f-ab7f-bfe549d4c21d.gif)
