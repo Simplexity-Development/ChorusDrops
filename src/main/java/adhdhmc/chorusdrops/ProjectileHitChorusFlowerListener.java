@@ -11,11 +11,12 @@ import org.bukkit.inventory.ItemStack;
 public class ProjectileHitChorusFlowerListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void entityHitFlower(ProjectileHitEvent event){
-        if (event.getHitBlock().getType() != Material.CHORUS_FLOWER){
+        if( event.getHitBlock() == null){
             return;
         }
         Block chorusFlower = event.getHitBlock();
         event.setCancelled(true);
+        assert chorusFlower != null;
         chorusFlower.breakNaturally();
         chorusFlower.getWorld().dropItem(chorusFlower.getLocation(), new ItemStack(Material.CHORUS_FLOWER));
     }

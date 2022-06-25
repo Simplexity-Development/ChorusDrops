@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 public class ChorusFlowerDestructionListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void flowersBreak(BlockDestroyEvent event){
-        if(event.getBlock().getType() != Material.CHORUS_FLOWER){
+        if(event.getBlock().getType().equals(Material.CHORUS_FLOWER)){
             return;
         }
         Location flowerLocation = event.getBlock().getLocation();
