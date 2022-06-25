@@ -15,7 +15,7 @@ public class ProjectileHitChorusFlowerListener implements Listener {
             return;
         }
         Block chorusFlower = event.getHitBlock();
-        if (event.getHitBlock().getType().equals(Material.CHORUS_FLOWER)){
+        if (chorusFlower.getType().equals(Material.CHORUS_FLOWER)){
         event.setCancelled(true);
         chorusFlower.breakNaturally();
         chorusFlower.getWorld().dropItem(chorusFlower.getLocation(), new ItemStack(Material.CHORUS_FLOWER));
