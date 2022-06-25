@@ -15,9 +15,10 @@ public class ProjectileHitChorusFlowerListener implements Listener {
             return;
         }
         Block chorusFlower = event.getHitBlock();
+        if (event.getHitBlock().getType().equals(Material.CHORUS_FLOWER)){
         event.setCancelled(true);
-        assert chorusFlower != null;
         chorusFlower.breakNaturally();
         chorusFlower.getWorld().dropItem(chorusFlower.getLocation(), new ItemStack(Material.CHORUS_FLOWER));
+        }
     }
 }
