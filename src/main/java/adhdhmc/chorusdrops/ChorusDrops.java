@@ -1,7 +1,5 @@
 package adhdhmc.chorusdrops;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ChorusDrops extends JavaPlugin {
@@ -12,7 +10,7 @@ public final class ChorusDrops extends JavaPlugin {
         try {
             Class.forName("com.destroystokyo.paper.event.block.BlockDestroyEvent");
         } catch (ClassNotFoundException e) {
-            Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_RED + "This plugin depends on a method that is not present on your server. Sorry for the inconvenience");
+            this.getLogger().severe("[ChorusDrops] This plugin depends on classes not present on your server. Disabling plugin");
             getServer().getPluginManager().disablePlugin(ChorusDrops.plugin);
             return;
         }

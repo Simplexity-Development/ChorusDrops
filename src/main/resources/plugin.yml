@@ -1,6 +1,6 @@
 name: ChorusDrops
 version: '${project.version}'
 main: adhdhmc.chorusdrops.ChorusDrops
-api-version: 1.13
+api-version: 1.18
 authors: [ _Rhythmic, Peashooter101 ]
 description: Chorus flowers will drop when stem is broken
